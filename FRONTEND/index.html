@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js">
+    </script>
+</head>
+
+<body>
+    <h1 class="text-center text-dark">
+        TP-01
+    </h1>
+
+    <div class="container">
+        <div class="col-lg-5 m-auto d-block">
+            <form>
+                <div class="form-group">
+                    <label for="user">
+                        nom d'utilisateur:
+                    </label>
+                    <input type="text" name="username" id="usernames" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="user">
+                        email:
+                    </label>
+                    <input type="email" name="email" id="email" required class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="password">
+                        mot de passe:
+                    </label>
+                    <input type="password" name="pass" id="password" class="form-control">
+                    <h5 id="passcheck" class="text-danger font-italic">
+                        veuillez remplir le mot de passe
+                    </h5>
+                </div>
+                <div class="form-group">
+                    <label for="conpassword">
+                        confirmer le mot de passe:
+                    </label>
+                    <input type="password" name="username" id="conpassword" class="form-control">
+                    <h5 id="conpasscheck" class="text-danger font-italic">
+                        Le mot de passe ne correspond pas
+                    </h5>
+                </div>
+                <input type="submit" id="submitbtn" value="Submit" class="btn btn-primary m-auto d-block">
+            </form>
+        </div>
+    </div>
+    <script src="../BACKEND/app.js"></script>
+</body>
+
+</html>
